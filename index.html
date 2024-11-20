@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Game Revenue Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VR Game Revenue Calculator</h1>
+        <form id="revenue-form">
+            <label for="price">Price per Copy ($):</label>
+            <input type="number" id="price" value="29.99" required>
+
+            <label for="sales">Estimated Number of Copies Sold:</label>
+            <input type="number" id="sales" value="100000" required>
+
+            <label for="inGamePercentage">In-Game Purchase Percentage (%):</label>
+            <input type="number" id="inGamePercentage" value="20" required>
+
+            <label for="averageSpend">Average In-Game Spend ($):</label>
+            <input type="number" id="averageSpend" value="20" required>
+
+            <button type="submit">Calculate Revenue</button>
+        </form>
+
+        <div id="results" class="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
